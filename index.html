@@ -27,6 +27,20 @@ if ('serviceWorker' in navigator) {
         });
 }
 </script>
+<!-- OneSignalのコード -->
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "30e39104-7411-447d-a237-8195f9612ce1",
+      notifyButton: {
+            enable: true,
+      },
+    });
+  });
+</script>
+</script>
 </head>
 <body>
 
